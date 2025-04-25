@@ -1,0 +1,15 @@
+create database if not exists dbTeste;
+show databases;
+use dbTeste;
+
+create table if not exists aluno (
+	id_aluno int primary key auto_increment,
+    nome varchar(100) not null,
+    ra int not null,
+    nota decimal (3,1)
+);
+
+show tables;
+describe aluno;
+
+alter table aluno add column telefone varchar(14);
